@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Food stole</title>
+
+    <!-- logo script link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="food.css">
+
+</head>
+<body>
+    <div class="main" id="home">
+        <nav class="header" id="header">
+            <div class="logo">
+                <h1>Saptak Musical school</h1>
+            </div>
+            <div class="link" id="links">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#service">services</a>
+                <a href="#blog">blog</a>
+                <a href="#contact" class="aa">contact</a>
+            </div>
+            <div class="icon">
+                <ion-icon name="menu-outline" id="menu-btn" onclick="openmenu()"></ion-icon>
+                <ion-icon name="close-outline" id="close" onclick="closemenu()"></ion-icon>
+            </div>
+        </nav>
+        <div class="header_content">
+            <center>
+                <img src="Wings-of-Music-.png" width="400px" height="500px">
+                <br>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </center>
+        </div>
+    </div>
+    <!-- ===========================================Our Food section start================ -->
+    <section class="content" id="service">
+        <div class="text_content">
+            <h1>Singing</h1>
+            <!-- <center><hr></center> -->
+            <hr>
+            <p><i>Welcome to saptak music school, the premier singing school for aspiring vocalists of all ages and skill levels. Our expert instructors provide personalized instruction in a nurturing and supportive env
+                ironment. From vocal technique and breath control to stage presence and performance skills, our comprehensive curriculum covers all aspects of vocal deve
+                lopment. Whether you dream of singing on Broadway, recording your own album, or simply improving your vocal abilities, our state-of-the-art facilities and innovative te
+                aching methods ensure a transformative learning experience. Join us at Harmony Vocal Academy and unleash the power of your voice while discovering the joy and artistry of singing.</i></p>
+        </div>
+        <div class="img">
+            <img src="sing.jpg" alt="">
+        </div>
+    </section>
+    <!-- ===========================================Our Food section ent================ -->
+    <!-- ===========================================organic section start================ -->
+    <section class="content">
+        <div class="text_content">
+            <h1>How to play piano</h1>
+            <!-- <center><hr></center> -->
+            <hr>
+            <p><i>Welcome to our piano teaching school, where we nurture a passion for music and cultivate lifelong musicians. Our dedicated instructors offer personalized lessons tailored to each student's skill level and goals. Whether you're a beginner taking your first steps or an advanced player aiming for excellence, our comprehensive curriculum covers music theory, technique, sight-reading, and performance. We provide a supportive and inspiring environment, fostering creativity and self-expression. Through engaging lessons and regular recitals, we instill confidence and a deep appreciation for the piano. Join us on this musical journey and unlock your potential at our esteemed piano teaching school.</i></p>
+        </div>
+        <div class="img">
+            <img src="piano.jpg" alt="">
+        </div>
+    </section>
+    <!-- ===========================================organic section ent================ -->
+    <!-- ===========================================Our Food section start================ -->
+    <section class="content">
+        <div class="text_content">
+            <h1>percussion</h1>
+            <!-- <center><hr></center> -->
+            <hr>
+            <p><i>Welcome to our percussion teaching school, where rhythm comes alive! Our experienced instructors are dedicated to helping students of all ages and skill levels explore the exciting world of percussion. Through personalized instruction, students learn fundamental techniques, music theory, and performance skills. Whether you're a beginner or an advanced player, our comprehensive curriculum covers various percussion instruments, including drums, marimba, xylophone, and more. With a strong emphasis on creativity and musicality, we strive to foster a passion for percussion and inspire students to reach their full potential. Join us today and embark on a rhythmic journey like no other!</i></p>
+        </div>
+        <div class="img">
+            <img src="tabla.jpg" alt="">
+        </div>
+    </section>
+    <!-- ===========================================Our Food section ent================ -->
+    <!-- ===================================================================================== -->
+    <section class="content">
+        <img src="main.jpg" height="600px" width="130%">
+    </section>
+    <!-- ===================================================================================== -->
+    <!-- ========================================footer section start========================== -->
+    <section class="footer">
+        <div class="footer_logo">
+            <img src="Wings-of-Music-.png">
+        </div>
+        <div class="footer_icons" id="contact">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+        </div>
+    </section>
+    <!-- ========================================footer section end========================== -->
+    <!-- javascript file -->
+    <script>
+        let menu = document.getElementById('links')
+        let open = document.getElementById('menu-btn')
+        let close = document.getElementById('close')
+        function openmenu() {
+            menu.style.left = "0";
+            open.style.display = "none";
+            close.style.display = "inline-block"
+        }
+        function closemenu() {
+            menu.style.left = "100%";
+            open.style.display = "inline-block";
+            close.style.display = "none";
+        }
+        var scrollTrigger = 600;
+        let nav = document.getElementById('header');
+    </script>
+
+    <script type="text/javascript">
+        var scrollTrigger = 600;
+        let nava = document.getElementById('header');
+        let mybutton = document.getElementById("myBtn");
+        let heading3 = document.getElementById("head");
+        window.onscroll = function () {
+            // We add pageYOffset for compatibility with IE.
+            if (window.scrollY >= scrollTrigger) {
+                nava.style.background = "#eee";
+                nava.style.zIndex = "999999";
+                nava.style.boxShadow = "0px 0px 10px black";
+                mybutton.style.display = "block";
+                heading3.style.color = "black";
+            } else {
+                nava.style.background = "none";
+                nava.style.zIndex = "999999";
+                nava.style.boxShadow = "none";
+                mybutton.style.display = "none";
+            }
+        };
+    </script>
+
+
+</body>
+
+</html>
